@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+    <meta http-equiv="Content-Type" content="text/html;charset=utf-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Welford</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+          integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css"
+          integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Muli" rel="stylesheet">
+    <link href="style.css" rel="stylesheet" type="text/css"/>
+
+
+    <script type="text/javascript" src="js/script.js"></script>
+
+</head>
+<body>
+<header>
+    <div class="container">
+        <div class="title">Welfords Bouquet</div>
+
+        <nav class="navbar navbar-expand-lg navbar-light ">
+            <button class="navbar-toggler mx-auto" type="button" data-toggle="collapse" data-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <ul class="navbar-nav mx-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="#"><i class="fas fa-search"></i></a>
+                </li>
+            </ul>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav mx-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Home<span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Shop</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Our Story</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Exhibitions</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link " href="#">Commissions</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link " href="#">Blog</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link " href="#">Contacts</a>
+                    </li>
+                </ul>
+            </div>
+            <ul class="navbar-nav mx-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="#"><i class="fas fa-shopping-basket"></i></a>
+                </li>
+
+            </ul>
+        </nav>
+    </div>
+</header>
+<div class="content">
+    <div class="container">
+        <div class="top-block">
+            <div class="left-side">
+                <img src="images/amy-shamblen-662202-unsplash.jpg" alt="">
+            </div>
+            <div class="right-side">
+                <div class="text">
+                    <span>Take a Look</span>
+                    <h2>The<br> Whitby<br> Range</h2>
+                    <div class="line"></div>
+                </div>
+            </div>
+        </div>
+        <div class="bottom-block">
+            <div class="box box-1">
+                <div class="box-text">
+                    <div class="border">
+                        <a class="box-link" href="#">
+                            <h3>The Making</h3>
+                            <p>Our yarn is 100% British.</p>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="box box-2">
+                <div class="box-text">
+                    <div class="border">
+                        <a class="box-link" href="#">
+                            <h3>Our History</h3>
+                            <p>A family runs business.</p>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="box box-3">
+                <div class="box-text">
+                    <div class="border">
+                        <a class="box-link" href="#">
+                            <h3>Commissions</h3>
+                            <p>Furnishing & uphlstery</p>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<section class="our-favorites">
+    <div class="container">
+        <h2>Our Favorites</h2>
+        <p>Lorem ipsum dolor sit amet.</p>
+        <div class="sales">
+            <div class="item item-1">
+                <a href="#">
+                    <img src="images/monika-grabkowska-664428-unsplash.jpg" alt="">
+                    <div class="description">
+                        <h3 class="name">West cliff</h3>
+                        <span class="price price-with-des">£290.00</span><span class="discount">£250.00</span>
+                    </div>
+                </a>
+                <span class="on-sale">Sale</span>
+            </div>
+            <div class="item item-2">
+                <a href="#">
+                    <img src="images/tanalee-youngblood-344759-unsplash.jpg" alt="">
+                    <div class="description">
+                        <h3 class="name">Esk</h3>
+                        <span class="price">£110.00</span>
+                    </div>
+                </a>
+            </div>
+            <div class="item item-3">
+                <a href="#">
+                    <img src="images/alexandra-gorn-328026-unsplash.jpg" alt="">
+                    <div class="description">
+                        <h3 class="name">Sandsand</h3>
+                        <span class="price">£110.00</span>
+                    </div>
+                </a>
+            </div>
+            <div class="item item-4">
+                <a href="#">
+                    <img src="images/christie-kim-769380-unsplash.jpg" alt="">
+                    <div class="description">
+                        <h3 class="name">West cliff cushion</h3>
+                        <span class="price">£110.00</span>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </div>
+</section>
+<div class="bottom-nav">
+    <div class="container">
+        <ul>
+            <li>
+                <a href="#">faq</a>
+            </li>
+            <li>
+                <a href="#">Delivery & Return</a>
+            </li>
+            <li>
+                <a href="#">Terms & Conditions</a>
+            </li>
+            <li>
+                <a href="#">Contact Us</a>
+            </li>
+        </ul>
+    </div>
+</div>
+<footer>
+    <div class="container">
+        <div class="tweets">
+            <ul>
+                <li>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                </li>
+                <li>
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                </li>
+                <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+            </ul>
+        </div>
+        <h3 class="copy">Copyright 2017</h3>
+        <p class="made">Made in Yorkshire</p>
+    </div>
+</footer>
+
+
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+
+</body>
+
+
+</html>

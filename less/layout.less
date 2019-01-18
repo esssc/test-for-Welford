@@ -1,0 +1,299 @@
+h3{
+  text-transform: uppercase;
+}
+body {
+  header {
+    font-family: 'Muli', sans-serif;
+    padding-top: 20px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+
+    .title {
+      font-size: 15px;
+      padding-bottom: 5px;
+      text-align: center;
+      text-transform: uppercase;
+      color: black;
+    }
+    nav.navbar {
+      font-size: 13px;
+      text-transform: uppercase;
+      .nav-item {
+        text-align: center;
+        .nav-link {
+          color: black;
+        }
+      }
+      .navbar-toggler{
+        border: none;
+      }
+    }
+  }
+  .content{
+    padding: 25px 0;
+    .top-block{
+      color: #ffffff;
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      padding-bottom: 25px;
+      .left-side{
+        width: 49.2%;
+       img{
+        width: 100%;
+         height: 100%;
+       }
+      }
+      .right-side{
+        position: relative;
+        background-color: #9ab4b3;
+        width: 49.2%;
+        .text{
+          text-align: center;
+          margin: 0;
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          margin-right: -50%;
+          transform: translate(-50%, -50%);
+          span{
+            font-style: italic;
+            font-size: 12px;
+            display: block;
+            padding-right: 29px;
+          }
+          h2{
+            font-family: 'Muli', sans-serif;
+            text-transform: uppercase;
+            padding-top: 20px;
+            font-size: 70px;
+            word-spacing: 100vm;
+            letter-spacing: 10px;
+          }
+          .line{
+            width: 60px;
+            height: 47px;
+            border-bottom: 1px solid #ffffff;
+            position: absolute;
+            left:50%;
+            transform: translate(-50%, -50%);
+          }
+        }
+      }
+      @media screen and (max-width:690px ){
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        .left-side{
+          width: 90%;
+
+        }
+        .right-side{
+          width: 90%;
+          padding-top: 20px;
+          height: 300px;
+          .text{
+            h2{
+              font-size: 50px;
+            }
+          }
+        }
+      }
+    }
+    .bottom-block{
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      text-align: center;
+      .box{
+        height: 20em;
+        width: 32.2%;
+        min-width: 320px;
+        margin-bottom: 25px;
+        background-repeat: no-repeat;
+        background-size: cover;
+        position: relative;
+        .box-text{
+          width: 90%;
+          text-align: center;
+          margin: 0;
+          position: absolute;
+          bottom: -12%;
+          left: 50%;
+          margin-right: -50%;
+          transform: translate(-50%, -50%);
+          background-color: #ffffff;
+          padding: 5px;
+          .border{
+          }
+          .box-link{
+            color: #a3a3a3;
+            padding: 15px;
+            h3{
+              color: #b1c4c4;
+              padding-bottom: 20px;
+            }
+            p{
+              font-size: 13px;
+            }
+          }
+          &:hover{
+            opacity: 0.8;
+          }
+        }
+        &.box-1{
+          background-image: url("images/thomas-ae-602202-unsplash.jpg");
+        }
+        &.box-2{
+          background-image: url("images/beatriz-perez-moya-191993-unsplash.jpg");
+        }
+        &.box-3{
+          background-image: url("images/tom-the-photographer-651516-unsplash.jpg");
+        }
+      }
+      @media screen and (max-width: 997px){
+        justify-content: space-around;
+      }
+    }
+  }
+  .our-favorites{
+    text-align: center;
+    h2{
+      text-transform: uppercase;
+      letter-spacing: 5px;
+    }
+    p{
+      font-style: italic;
+      font-size: 12px;
+      color: #a3a3a3;
+      padding-top: 10px;
+
+    }
+    .sales{
+      padding: 70px 0;
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      width: 100%;
+      .item{
+        width: 24%;
+        position: relative;
+        min-width: 208px;
+        img{
+          width: 100%;
+          height: 100%;
+          max-height: 300px;
+        }
+        .description{
+          padding-top: 15px;
+          .name{
+            color: #000000;
+            letter-spacing: 1px;
+          }
+          .price{
+            font-size: 13px;
+            color: #a3a3a3;
+            &.price-with-des{
+              text-decoration: line-through;
+            }
+          }
+          .discount{
+            font-size: 13px;
+            color: #99bcdf;
+            padding-left: 10px;
+          }
+        }
+        &:hover{
+          opacity: 0.6;
+        }
+      }
+      .on-sale{
+        font-size: 12px;
+        text-align: center;
+        padding-top: 12px;
+        color: white;
+        position:absolute;
+        top: 0;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        background-color: black;
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        font-style: italic;
+
+      }
+      @media screen and (max-width: 887px){
+        justify-content: space-around;
+        .item{
+          margin-bottom: 20px;
+        }
+      }
+      @media screen and (max-width: 453px){
+        .item{
+          img{
+            height: auto;
+          }
+        }
+      }
+    }
+  }
+  .bottom-nav{
+    text-align: center;
+    border-top: 1px solid #a3a3a3;
+    border-bottom: 1px solid #a3a3a3;
+    margin-bottom: 45px;
+    ul{
+      padding: 15px 0;
+      li{
+        display: inline-block;
+        padding-right: 60px;
+        &:last-child{
+          padding-right: 0;
+        }
+        a{
+          text-transform: uppercase;
+          font-size: 13px;
+          color: #a3a3a3;
+          &:hover{
+            opacity: 0.6;
+          }
+        }
+        @media screen and (max-width: 617px){
+          display: block;
+          margin: 0 auto;
+          padding: 0;
+        }
+      }
+    }
+  }
+  footer{
+    text-align: center;
+    .tweets{
+      margin-bottom: 40px;
+      ul{
+        li{
+          display: inline-block;
+          margin: 0 23px;
+          padding-top: 14px;
+          width: 50px;
+          height: 50px;
+          border:1px solid #a3a3a3;
+          border-radius: 50%;
+          a{
+            color: #a3a3a3;
+          }
+        }
+      }
+    }
+    .copy{
+      font-size: 13px;
+      color: #a3a3a3;
+    }
+    .made{
+      font-style: italic;
+      font-weight: 300;
+      padding: 10px 0 20px 0;
+
+    }
+  }
+}

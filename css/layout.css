@@ -1,0 +1,292 @@
+h3 {
+  text-transform: uppercase;
+}
+body header {
+  font-family: 'Muli', sans-serif;
+  padding-top: 20px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+}
+body header .title {
+  font-size: 15px;
+  padding-bottom: 5px;
+  text-align: center;
+  text-transform: uppercase;
+  color: black;
+}
+body header nav.navbar {
+  font-size: 13px;
+  text-transform: uppercase;
+}
+body header nav.navbar .nav-item {
+  text-align: center;
+}
+body header nav.navbar .nav-item .nav-link {
+  color: black;
+}
+body header nav.navbar .navbar-toggler {
+  border: none;
+}
+body .content {
+  padding: 25px 0;
+}
+body .content .top-block {
+  color: #ffffff;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding-bottom: 25px;
+}
+body .content .top-block .left-side {
+  width: 49.2%;
+}
+body .content .top-block .left-side img {
+  width: 100%;
+  height: 100%;
+}
+body .content .top-block .right-side {
+  position: relative;
+  background-color: #9ab4b3;
+  width: 49.2%;
+}
+body .content .top-block .right-side .text {
+  text-align: center;
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-right: -50%;
+  transform: translate(-50%, -50%);
+}
+body .content .top-block .right-side .text span {
+  font-style: italic;
+  font-size: 12px;
+  display: block;
+  padding-right: 29px;
+}
+body .content .top-block .right-side .text h2 {
+  font-family: 'Muli', sans-serif;
+  text-transform: uppercase;
+  padding-top: 20px;
+  font-size: 70px;
+  word-spacing: 100vm;
+  letter-spacing: 10px;
+}
+body .content .top-block .right-side .text .line {
+  width: 60px;
+  height: 47px;
+  border-bottom: 1px solid #ffffff;
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+@media screen and (max-width: 690px) {
+  body .content .top-block {
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+  }
+  body .content .top-block .left-side {
+    width: 90%;
+  }
+  body .content .top-block .right-side {
+    width: 90%;
+    padding-top: 20px;
+    height: 300px;
+  }
+  body .content .top-block .right-side .text h2 {
+    font-size: 50px;
+  }
+}
+body .content .bottom-block {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  text-align: center;
+}
+body .content .bottom-block .box {
+  height: 20em;
+  width: 32.2%;
+  min-width: 320px;
+  margin-bottom: 25px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+body .content .bottom-block .box .box-text {
+  width: 90%;
+  text-align: center;
+  margin: 0;
+  position: absolute;
+  bottom: -12%;
+  left: 50%;
+  margin-right: -50%;
+  transform: translate(-50%, -50%);
+  background-color: #ffffff;
+  padding: 5px;
+}
+body .content .bottom-block .box .box-text .box-link {
+  color: #a3a3a3;
+  padding: 15px;
+}
+body .content .bottom-block .box .box-text .box-link h3 {
+  color: #b1c4c4;
+  padding-bottom: 20px;
+}
+body .content .bottom-block .box .box-text .box-link p {
+  font-size: 13px;
+}
+body .content .bottom-block .box .box-text:hover {
+  opacity: 0.8;
+}
+body .content .bottom-block .box.box-1 {
+  background-image: url("images/thomas-ae-602202-unsplash.jpg");
+}
+body .content .bottom-block .box.box-2 {
+  background-image: url("images/beatriz-perez-moya-191993-unsplash.jpg");
+}
+body .content .bottom-block .box.box-3 {
+  background-image: url("images/tom-the-photographer-651516-unsplash.jpg");
+}
+@media screen and (max-width: 997px) {
+  body .content .bottom-block {
+    justify-content: space-around;
+  }
+}
+body .our-favorites {
+  text-align: center;
+}
+body .our-favorites h2 {
+  text-transform: uppercase;
+  letter-spacing: 5px;
+}
+body .our-favorites p {
+  font-style: italic;
+  font-size: 12px;
+  color: #a3a3a3;
+  padding-top: 10px;
+}
+body .our-favorites .sales {
+  padding: 70px 0;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  width: 100%;
+}
+body .our-favorites .sales .item {
+  width: 24%;
+  position: relative;
+  min-width: 208px;
+}
+body .our-favorites .sales .item img {
+  width: 100%;
+  height: 100%;
+  max-height: 300px;
+}
+body .our-favorites .sales .item .description {
+  padding-top: 15px;
+}
+body .our-favorites .sales .item .description .name {
+  color: #000000;
+  letter-spacing: 1px;
+}
+body .our-favorites .sales .item .description .price {
+  font-size: 13px;
+  color: #a3a3a3;
+}
+body .our-favorites .sales .item .description .price.price-with-des {
+  text-decoration: line-through;
+}
+body .our-favorites .sales .item .description .discount {
+  font-size: 13px;
+  color: #99bcdf;
+  padding-left: 10px;
+}
+body .our-favorites .sales .item:hover {
+  opacity: 0.6;
+}
+body .our-favorites .sales .on-sale {
+  font-size: 12px;
+  text-align: center;
+  padding-top: 12px;
+  color: white;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: black;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  font-style: italic;
+}
+@media screen and (max-width: 887px) {
+  body .our-favorites .sales {
+    justify-content: space-around;
+  }
+  body .our-favorites .sales .item {
+    margin-bottom: 20px;
+  }
+}
+@media screen and (max-width: 453px) {
+  body .our-favorites .sales .item img {
+    height: auto;
+  }
+}
+body .bottom-nav {
+  text-align: center;
+  border-top: 1px solid #a3a3a3;
+  border-bottom: 1px solid #a3a3a3;
+  margin-bottom: 45px;
+}
+body .bottom-nav ul {
+  padding: 15px 0;
+}
+body .bottom-nav ul li {
+  display: inline-block;
+  padding-right: 60px;
+}
+body .bottom-nav ul li:last-child {
+  padding-right: 0;
+}
+body .bottom-nav ul li a {
+  text-transform: uppercase;
+  font-size: 13px;
+  color: #a3a3a3;
+}
+body .bottom-nav ul li a:hover {
+  opacity: 0.6;
+}
+@media screen and (max-width: 617px) {
+  body .bottom-nav ul li {
+    display: block;
+    margin: 0 auto;
+    padding: 0;
+  }
+}
+body footer {
+  text-align: center;
+}
+body footer .tweets {
+  margin-bottom: 40px;
+}
+body footer .tweets ul li {
+  display: inline-block;
+  margin: 0 23px;
+  padding-top: 14px;
+  width: 50px;
+  height: 50px;
+  border: 1px solid #a3a3a3;
+  border-radius: 50%;
+}
+body footer .tweets ul li a {
+  color: #a3a3a3;
+}
+body footer .copy {
+  font-size: 13px;
+  color: #a3a3a3;
+}
+body footer .made {
+  font-style: italic;
+  font-weight: 300;
+  padding: 10px 0 20px 0;
+}
